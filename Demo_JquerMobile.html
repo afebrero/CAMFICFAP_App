@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<link href="js/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script><script src="js/phonegap-2.5.0.js"></script>
+<script src="Adual.js"></script>
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+	<div data-role="page" data-theme="b" id="Dialogo">
+    
+    <div data-role="header" data-theme="e">
+    <h1>CAMFiC</h1>
+    </div>
+    
+    <div data-role="content">
+    
+    
+    	<p>Estás por eliminar algo muy importante</p>
+        
+       <div class="ui-grid-a"> 
+       		<div class="ui-block-a">
+        <a href="#confirmacion"  data-role="button" data-rel="dialog">Eliminar</a>
+        </div>
+        	<div class="ui-block-b">
+        <a href="#confirmacion"  data-role="button" data-rel="dialog">Cerrar</a>
+		</div>
+        </div>
+        
+        <h2>Cursos de Programación</h2>
+        <ul data-role="listview">
+        	<li><a href="Pagina1.html">ASP.NET</a>
+
+            <ul data-role="listview" data-inset="true">
+        		<li>Cardiologia</li>
+        	    <li>Dermatologia</li>
+    	        <li>Urgencies</li>
+	        </ul>
+            
+            </li>
+            <li>C#
+             <ul data-role="listview" data-inset="true">
+        		<li>Cardiologia</li>
+        	    <li>Dermatologia</li>
+    	        <li>Urgencies</li>
+	        </ul>
+            </li>
+            <li>JQuery</li>
+        </ul>
+        
+        <br>
+        <br>
+         <ul data-filter="true" data-filter-placeholder="Cerca" data-role="listview" data-inset="true" data-dividertheme="e">
+        	<li data-role="list-divider" data-theme="e">SPAIN</li>
+            <li><a href="">Cardiologia</a>
+				<a href=""></a>		
+            </li>
+            <li><img src="icon-facebookBlanco.png" class="ui-li-icon">Facebook <p class="ui-li-aside">10.000</p></li>
+            <li><img src="icon-twitterBlanco.png" class="ui-li-icon">Twitter <span class="ui-li-count">25</span></li>
+             <li>
+             	<h3>Hello</h3>
+             <p>Lorem ipsum</p>
+             
+             </li>
+        </ul>
+        
+        </div>
+        
+		
+        
+        
+        <div data-role="footer" data-theme="b">
+        <h4>www.camfic.cat</h4>
+        </div>        </div>
+       
+
+    <div id="confirmacion" data-role="page">
+    <div data-role="header"><h1>Eliminar</h1></div>
+    
+    <div data-role="content">
+    <a href="#Dialogo" data-role="button"  data-direction="reverse">Si, eliminar</a>
+    
+    <a href="#Dialogo" data-role="button" data-direction="reverse">Cancelar</a>
+    </div>    
+    </div>
+
+
+
+</body>
+</html>

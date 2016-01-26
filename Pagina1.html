@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<link href="js/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="Adual.js"></script>
+
+
+<script>
+$(document).bind("mobileinit", function() {
+	
+	setTimeout (function() {
+		$.mobile.changePage("#Pagina2" ,					        {
+			reverse:true,
+			transition: 'slideup',
+			type:'post',
+			
+				
+		});
+	}, 2000);
+	
+});
+
+</script>
+
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div data-role="page" data-fullscreen="true" id="Pagina1" data-theme="b">
+	
+    <div data-role="header" data-position="fixed" data-theme="e">
+		<h1>CAMFiC</h1>
+        <a href="#Pagina2">Pagina2</a>
+        <a href="#Dialogo" data-role="none">Dialogo</a>
+        
+        <div data-role="navbar" data-theme="a">
+        <ul>
+        	<li><a href="#" class="ui-btn-active">Primer</a></li>
+	    	<li><a href="#" data-icon="arrow-l" data-iconpos="notext"></a></li>
+        	<li><a href="#">Tercer</a></li>	
+            <li><a href="#">Cuarto</a></li>	
+            <li><a href="#">Quinto</a></li>            			            </ul>	
+	   	 </div>	
+	</div>
+	<div data-role="content">
+		<a href="#Pagina2" data-role="button" data-theme="d" >Ir a página 2</a>
+        
+        <a href="Index.html" data-role="button" data-theme="d" >Ir a página 3</a>
+        
+        
+        <a href="http://www.sport.es" data-role="button" rel="external" data-theme="d" >Externo</a>
+        
+        <a href="#Pagina4" data-role="button"  data-transition="slide" data-theme="d" >Slide</a>
+        
+            <a href="#Pagina2" data-role="button"  data-transition="slidedown" data-theme="d" >Slidedown</a>
+        
+        <a href="#Pagina2" data-role="button"  data-transition="slideup" data-theme="d" >SlideUp</a>
+        
+        <a href="#Pagina2" data-role="button"  data-transition="flip" data-theme="d" >Flip</a>
+        
+        <a href="#Pagina2" data-role="button"  data-transition="fade" data-theme="d" >Fade</a>
+        
+        <a href="#Pagina2" data-role="button"  data-transition="pop" data-theme="d" >Pop</a>
+        
+        <div data-role="controlgroup" data-type="horizontal">
+    <a href="#Dialogo" data-icon="check" data-role="button" data-iconpos="top"  data-direction="reverse">Aceptar</a>
+    
+    <a href="#Dialogo" data-role="button" data-icon="delete" data-iconpos="top"  data-direction="reverse">Cancelar</a>
+    </div>
+    
+    
+    <!-- COLAPSABLE -->
+    <div data-role="collapsible" data-collapsed="false">
+    <h2>Lorem Ipsum</h2>
+    <p>
+    	Lorem iosum
+    </p>
+    
+    </div>
+    <div data-role="collapsible">
+    <h2>Lorem Ipsum 2</h2>
+    <p>
+    	Lorem iosum 2
+    </p>
+    
+    </div>
+    
+     <!-- COLAPSABLE -->
+     
+      <!-- ACORDEON -->
+	<div data-role="collapsible-set">
+    <div data-role="collapsible" data-collapsed="false">
+    <h2>Lorem Ipsum</h2>
+    <p>
+    	Lorem iosum
+    </p>
+    
+    </div>
+    <div data-role="collapsible">
+    <h2>Lorem Ipsum 2</h2>
+    <p>
+    	Lorem iosum 2
+    </p>
+    
+    </div>
+    </div>
+     <!-- ACORDEON -->
+    </div>
+    
+    <div data-role="footer" data-position="fixed" data-theme="b" class="ui-bar">
+		 <div data-role="navbar" data-theme="a">
+        <ul>
+        	<li><a href="#" class="ui-btn-active">Primer</a></li>
+	    	<li><a href="#">Segundo</a></li>
+        	<li><a href="#">Tercer</a></li>	
+            <li><a href="#">Cuarto</a></li>	
+            <li><a href="#">Quinto</a></li>            			            </ul>	
+         </div>
+    </div>
+    
+</div>
+
+
+<div data-role="page" data-theme="=b" id="Pagina2" data-add-back-btn="true">
+	<div data-role="header" data-theme="d">
+		<h1>CAMFiC</h1>
+    </div>
+
+	<div data-role="content">
+		
+    </div>
+    
+    <div data-role="footer" data-theme="d" data-id="footer1">
+		<div data-role="navbar" data-theme="a">
+        <ul>
+        	<li><a href="#" class="ui-btn-active">Primer</a></li>
+	    	<li><a href="#">Segundo</a></li>
+        	<li><a href="#">Tercer</a></li>	
+            <li><a href="#">Cuarto</a></li>	
+            <li><a href="#">Quinto</a></li>            			            </ul>	
+         </div>
+    </div>
+    
+</div>
+<div data-role="page" id="Pagina4">
+  <div data-role="header">
+    <h1>Encabezado</h1>
+  </div>
+  <div data-role="content">Contenido</div>
+  <div data-role="footer" data-id="footer1">
+    <div data-role="navbar" data-theme="a">
+        <ul>
+        	<li><a href="#" class="ui-btn-active">Primer</a></li>
+	    	<li><a href="#">Segundo</a></li>
+        	<li><a href="#">Tercer</a></li>	
+            <li><a href="#">Cuarto</a></li>	
+            <li><a href="#">Quinto</a></li>            			            </ul>	
+         </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿
+/* CSS Document */
+
+@font-face 
+{
+	 font-family: "Open Sans Bold";
+	 src: url('../webfonts/OpenSans-Regular.ttf');
+	 src: url('../webfonts/OpenSans-Bold.ttf');
+	 src: url('../webfonts/OpenSans-Light.ttf');
+	 src: url('../webfonts/OpenSans-Semibold.ttf');
+}
+
+body
+{
+	 background-color:#f5f5f5;
+	 font-size: 100%;
+	 font-family:"Trebuchet MS", Arial, Onyx, Sans-Serif;
+	 color:#5e5e5e; 
+	 padding:0px;
+	 margin:0px;
+}
+
+
+
+li{
+height:45px; padding:15px 0px 0px 60px
+}
+
+
+/* Controles Formularios
+====================================*/
+
+input { width:88%; margin-bottom:20px; height:24px; padding-left:12%;  background-color:White;}
+
+.boton { width:100%; min-height:28px; margin-bottom:12px; background-color: #6e7781; padding:7px; color: #FFF; font-size: 0.9em; text-align:center; vertical-align: middle; cursor:pointer;   border: solid 1px #b3b2b2; -webkit-border-radius: 3px; -moz-border-radius: 3px;  border-radius: 3px; }
+.boton:hover { background: #1c5c4d; color:#FFF;   text-decoration:none;}
+.boton:active { background: #1b435e;   color:#FFF; }
+.boton a { color:#FFF;   text-decoration:none; }
+
+
+/*Textos
+====================================*/
+
+	
+blockquote { border-left: 3px solid #e8e8e8;	padding-left: 20px;	color: #888;	line-height: 20px;	margin: 5px 0 20px 15px;}
+.underline {text-decoration:underline}
+
+.justificado {text-align:justify;}
+.texto-centrado {text-align:center}
+.cursor { cursor:pointer}
+
+.verde {color: #1c5c4d}
+.verde:hover {color: #1ab2ed}
+
+.gris {color: #6e7781}
+.gris:hover {color: #1ab2ed}
+
+.naranja {color: #ffa91d;}
+.naranja:hover {color: #1ab2ed}
+
+
+/* Imagenes 
+====================================*/
+img {opacity: 0.8;	filter: alpha(opacity = 80); -webkit-transition: all 0.2s ease-in-out;	-moz-transition: all 0.2s ease-in-out;	-o-transition: all 0.2s ease-in-out;	-ms-transition: all 0.2s ease-in-out;	transition: all 0.2s ease-in-out;}
+img:hover {opacity: 1; }
+.no-opacity {opacity: 1; }
+.no-border {border:0px}
+.middle {vertical-align:middle}
+
+
+/* Posicion
+====================================*/
+.no-margin-right {margin-right:0px}
+.no-margin-left {margin-left:0px}
+.no-margin-top {margin-top:0px}
+.no-margin-bottom {margin-bottom:0px}
+.no-padding {padding:0px}
+.no-display {display:none}
+.clear {clear:left; float:left;}
+
+/* Sombras
+====================================*/
+.sombraVerde { 	-webkit-box-shadow: 0px 0px 25px #1c5c4d;  -moz-box-shadow: 0px 0px 25px #1c5c4d;  box-shadow: 2px 2px 12px #1c5c4d; }
+.sombraGris { -webkit-box-shadow: 0px 0px 15px #cecfcf;   -moz-box-shadow: 0px 0px 10px #cecfcf; box-shadow: 0px 0px 10px #cecfcf; }
+
